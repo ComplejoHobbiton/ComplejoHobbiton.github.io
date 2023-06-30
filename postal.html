@@ -28,11 +28,6 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
     <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
@@ -43,13 +38,14 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="index.html">Inicio</a></li>
-                                        <li><a class="active" href="postal.html">Experiencias<i class="ti-angle-down"></i></a>
+                                        <li><a class="active" href="postal.html">Experiencias<i
+                                                    class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="postal.html">Enviar postal</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about.html">Sobre nosotros</a></li>
-                                        
+
                                     </ul>
                                 </nav>
                             </div>
@@ -78,170 +74,156 @@
         <h3>Envío de postal</h3>
     </div>
     <!-- bradcam_area_end -->
-
-    <!-- Formulario para enviar postal -->
-
-    <form action="" onsubmit="formulario()">
-        <p>Nombre del destinatario:</p>
-        <input type="text" name="" id="">
-
-        <p>Texto de la postal:</p>
-        <textarea rows="5" cols="40" name="textopostal">
-
-    </form>
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Dirección
-                            </h3>
-                            <p class="footer_text"> Montecelo Apto. 2 Galdo, <br>
-                                Viveiro, España</p>
+    <img src="img/postal/postal.png" height="400" alt="Imagen de la postal" id="postal">
+    <br><br>
+    <div class="section-top-border">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <h3 class="mb-30">¡Envíale una postal de nuestro complejo a quien quieras!</h3>
+                <form action="" onsubmit="formulario()">
+                    <div class="mt-10">
+                        <div class="primary-input">
+                            <label for="nombre">Nombre del destinatario: (obligatorio)</label>
+                            <input id="nombre" type="text" name="nombre" required>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Reservas
-                            </h3>
-                            <p class="footer_text">626284578 <br>
-                                reservas@complejobbiton.es</p>
+                    <div class="mt-10">
+                        <div class="primary-input">
+                            <label for="email">Email del destinatario: (obligatorio)</label>
+                            <input id="email" type="email" name="email" required>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-6 col-lg-2">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Navegación
-                            </h3>
-                            <ul>
-                                <li><a href="index.html">Inicio</a></li>
-                                <li><a href="postal.html">Enviar Postal</a></li>
-                                <li><a href="about.html">Sobre nosotros</a></li>
-                            </ul>
+                    <div class="mt-10">
+                        <div class="primary-input">
+                            <label for="textopostal">Texto de la postal: (obligatorio)</p>
+                                <textarea rows="5" cols="40" name="textopostal" id="textopostal" required></textarea>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        <div class="footer_widget">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-8 col-md-7 col-lg-9">
-                        <p class="copy_right">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                    <div class="col-xl-4 col-md-5 col-lg-3">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer_end -->
+                    <input type="submit" value="Enviar">
+                    <br>
+                </form>
+                
+                <br>
+</div>
 
-    <!-- form itself end-->
-    <form id="test-form" class="white-popup-block mfp-hide">
-        <div class="popup_box ">
-                <div class="popup_inner">
-                    <h3>Check Availability</h3>
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <input id="datepicker" placeholder="Check in date">
-                            </div>
-                            <div class="col-xl-6">
-                                <input id="datepicker2" placeholder="Check out date">
-                            </div>
-                            <div class="col-xl-6">
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Adult">1</option>
-                                    <option value="1">2</option>
-                                    <option value="2">3</option>
-                                    <option value="3">4</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-6">
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Children">1</option>
-                                    <option value="1">2</option>
-                                    <option value="2">3</option>
-                                    <option value="3">4</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-12">
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option data-display="Room type">Room type</option>
-                                    <option value="1">Laxaries Rooms</option>
-                                    <option value="2">Deluxe Room</option>
-                                    <option value="3">Signature Room</option>
-                                    <option value="4">Couple Room</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-12">
-                                <button type="submit" class="boxed-btn3">Check Availability</button>
+</div>
+                <!-- Formulario para enviar postal -->
+
+
+
+                    <!-- Fin del formulario para enviar postal -->
+
+                    <!-- footer -->
+                    <footer class="footer">
+                        <div class="footer_top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-3 col-md-6 col-lg-3">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_title">
+                                                Dirección
+                                            </h3>
+                                            <p class="footer_text"> Montecelo Apto. 2 Galdo, <br>
+                                                Viveiro, España</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-6 col-lg-3">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_title">
+                                                Reservas
+                                            </h3>
+                                            <p class="footer_text">626284578 <br>
+                                                reservas@complejobbiton.es</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-md-6 col-lg-2">
+                                        <div class="footer_widget">
+                                            <h3 class="footer_title">
+                                                Navegación
+                                            </h3>
+                                            <ul>
+                                                <li><a href="index.html">Inicio</a></li>
+                                                <li><a href="postal.html">Enviar Postal</a></li>
+                                                <li><a href="about.html">Sobre nosotros</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-lg-4">
+                                        <div class="footer_widget">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-    </form>
-<!-- form itself end -->
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
+                        <div class="copy-right_text">
+                            <div class="container">
+                                <div class="footer_border"></div>
+                                <div class="row">
+                                    <div class="col-xl-8 col-md-7 col-lg-9">
+                                        <p class="copy_right">
+                                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                            Copyright &copy;
+                                            <script>document.write(new Date().getFullYear());</script> All rights
+                                            reserved | This
+                                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </div>
+                                    <div class="col-xl-4 col-md-5 col-lg-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- footer_end -->
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
 
-    <script src="js/main.js"></script>
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-        $('#datepicker2').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
+                    <!-- JS here -->
+                    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+                    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/owl.carousel.min.js"></script>
+                    <script src="js/isotope.pkgd.min.js"></script>
+                    <script src="js/ajax-form.js"></script>
+                    <script src="js/waypoints.min.js"></script>
+                    <script src="js/jquery.counterup.min.js"></script>
+                    <script src="js/imagesloaded.pkgd.min.js"></script>
+                    <script src="js/scrollIt.js"></script>
+                    <script src="js/jquery.scrollUp.min.js"></script>
+                    <script src="js/wow.min.js"></script>
+                    <script src="js/nice-select.min.js"></script>
+                    <script src="js/jquery.slicknav.min.js"></script>
+                    <script src="js/jquery.magnific-popup.min.js"></script>
+                    <script src="js/plugins.js"></script>
+                    <script src="js/gijgo.min.js"></script>
 
-        });
-    </script>
+                    <!--contact js-->
+                    <script src="js/contact.js"></script>
+                    <script src="js/jquery.ajaxchimp.min.js"></script>
+                    <script src="js/jquery.form.js"></script>
+                    <script src="js/jquery.validate.min.js"></script>
+                    <script src="js/mail-script.js"></script>
+
+                    <script src="js/main.js"></script>
+                    <script>
+                        $('#datepicker').datepicker({
+                            iconsLibrary: 'fontawesome',
+                            icons: {
+                                rightIcon: '<span class="fa fa-caret-down"></span>'
+                            }
+                        });
+                        $('#datepicker2').datepicker({
+                            iconsLibrary: 'fontawesome',
+                            icons: {
+                                rightIcon: '<span class="fa fa-caret-down"></span>'
+                            }
+
+                        });
+                    </script>
 
 
 
 </body>
+
 </html>

@@ -344,3 +344,8 @@ mailChimp();
         });
 
 })(jQuery);	
+
+
+function formulario(){
+  alert("Tu postal se ha enviado");
+}
