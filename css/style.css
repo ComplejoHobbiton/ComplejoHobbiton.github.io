@@ -39,7 +39,6 @@ a:focus,
 .button:focus,
 button:focus {
     text-decoration: none;
-    outline: none
 }
 
 a:focus {
@@ -58,7 +57,6 @@ a:hover,
 a,
 button {
     color: #1F1F1F;
-    outline: medium none
 }
 
 h1,
@@ -299,9 +297,6 @@ h3 {
     border: 1px solid #009DFF
 }
 
-.boxed-btn:focus {
-    outline: none
-}
 
 .boxed-btn.large-width {
     width: 220px
@@ -334,10 +329,6 @@ h3 {
     border: 1px solid #009DFF
 }
 
-.boxed-btn3:focus {
-    outline: none
-}
-
 .boxed-btn3.large-width {
     width: 220px
 }
@@ -361,9 +352,7 @@ h3 {
     color: #131313 !important
 }
 
-.boxed-btn2:focus {
-    outline: none
-}
+
 
 .line-button {
     color: #919191;
@@ -1291,9 +1280,7 @@ h3 {
     transform: scale(1.1)
 }
 
-.video_bg {
-    background-image: url(../img/video/video.png)
-}
+
 
 .video_area {
     padding: 250px 0;
@@ -1933,7 +1920,6 @@ h3 {
     font-weight: normal;
     width: 100% !important;
     line-height: 50px;
-    outline: none;
     padding-left: 18px;
     padding-right: 30px;
     position: relative;
@@ -2080,7 +2066,6 @@ h3 {
 }
 
 .form-contact .form-control:focus {
-    outline: 0;
     box-shadow: none
 }
 
@@ -2243,7 +2228,6 @@ h6 {
 
 .genric-btn {
     display: inline-block;
-    outline: none;
     line-height: 40px;
     padding: 0 30px;
     font-size: .8em;
@@ -2257,9 +2241,6 @@ h6 {
     transition: all 0.3s ease 0s
 }
 
-.genric-btn:focus {
-    outline: none
-}
 
 .genric-btn.e-large {
     padding: 0 40px;
@@ -2468,7 +2449,7 @@ h6 {
 }
 
 .genric-btn.disable {
-    color: #222, 0.3;
+    color: #222;
     background: #f9f9ff;
     border: 1px solid transparent;
     cursor: not-allowed
@@ -2661,14 +2642,10 @@ h6 {
     width: 100%;
     line-height: 40px;
     border: none;
-    outline: none;
     background: #f9f9ff;
     padding: 0 20px
 }
 
-.single-input:focus {
-    outline: none
-}
 
 .input-group-icon {
     position: relative
@@ -2695,29 +2672,23 @@ h6 {
     width: 100%;
     line-height: 40px;
     border: none;
-    outline: none;
     background: #f9f9ff;
     padding: 0 20px;
     height: 100px;
     resize: none
 }
 
-.single-textarea:focus {
-    outline: none
-}
 
 .single-input-primary {
     display: block;
     width: 100%;
     line-height: 40px;
     border: 1px solid transparent;
-    outline: none;
     background: #f9f9ff;
     padding: 0 20px
 }
 
 .single-input-primary:focus {
-    outline: none;
     border: 1px solid #ff5e13
 }
 
@@ -2726,13 +2697,13 @@ h6 {
     width: 100%;
     line-height: 40px;
     border: 1px solid transparent;
-    outline: none;
+
     background: #f9f9ff;
     padding: 0 20px
 }
 
 .single-input-accent:focus {
-    outline: none;
+
     border: 1px solid #eb6b55
 }
 
@@ -2741,13 +2712,13 @@ h6 {
     width: 100%;
     line-height: 40px;
     border: 1px solid transparent;
-    outline: none;
+
     background: #f9f9ff;
     padding: 0 20px
 }
 
 .single-input-secondary:focus {
-    outline: none;
+
     border: 1px solid #f09359
 }
 
@@ -3883,7 +3854,6 @@ h6 {
 
 .blog_right_sidebar .search_widget .form-control:focus {
     border-color: #f0e9ff;
-    outline: 0;
     box-shadow: none
 }
 
@@ -3916,7 +3886,6 @@ h6 {
 
 .blog_right_sidebar .newsletter_widget .form-control:focus {
     border-color: #f0e9ff;
-    outline: 0;
     box-shadow: none
 }
 
@@ -4438,7 +4407,6 @@ h6 {
 }
 
 .comment-form .form-control:focus {
-    outline: 0;
     box-shadow: none
 }
 

@@ -39,7 +39,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="index.html"><b>Inicio</b></a></li>
-                                        <li><a href="#" title="Hobbiton Resort"><b>Hobbiton Resort</b><em class="ti-angle-down"></em></a>
+                                        <li><a href="#" title="Hobbiton Resort"><b>Hobbiton Resort</b><em
+                                                    class="ti-angle-down"></em></a>
                                             <ul class="submenu">
                                                 <li><a href="habitaciones.html">Habitaciones</a></li>
                                                 <li><a href="actividades.html">Actividades</a></li>
@@ -48,7 +49,7 @@
                                         </li>
                                         <li><a href="about.html"><b>Sobre nosotros</b></a></li>
                                         <li><a class="active" href="reservar.html"><b>Reservar</b></a>
-                                        
+
                                     </ul>
                                 </nav>
                             </div>
@@ -71,92 +72,99 @@
         </div>
     </header>
     <!-- header-end -->
-<main>
-    <h1></h1>
-    <h2></h2>
-    <!-- bradcam_area_start -->
-    <div class="bradcam_area breadcam_bg">
-        <h3><b>Reservar alojamiento</b></h3>
-    </div>
-    <!-- bradcam_area_end -->
-    <img src="img/about/about_2.png" height="700" alt="Habitaciones del hotel" id="postal">
-    <!-- Formulario reservas -->
-    <div class="about_info_area">
-        <form action="" onsubmit="reserva()" id="formulario">
-            <div class="popup_box">
-                <div class="popup_inner">
-                    <h3 id="disponh3">Comprobar disponibilidad</h3>
-                    <h3 id="reservh3" style="display: none;">Reservar habitación</h3>
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <label for="datepicker">Fecha de Entrada:</label>
-                                <input id="datepicker" name="datepicker" placeholder="Seleccionar" required>
+    <main>
+        <h1></h1>
+        <h2></h2>
+        <!-- bradcam_area_start -->
+        <div class="bradcam_area breadcam_bg">
+            <h3><b>Reservar alojamiento</b></h3>
+        </div>
+        <!-- bradcam_area_end -->
+        <img src="img/about/about_2.png" height="700" alt="Habitaciones del hotel" id="postal">
+        <!-- Formulario reservas -->
+        <div class="about_info_area">
+            <form action="" onsubmit="reserva()" id="formulario">
+                <div class="popup_box">
+                    <div class="popup_inner">
+                        <h3 id="disponh3">Comprobar disponibilidad</h3>
+                        <h3 id="reservh3" style="display: none;">Reservar habitación</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <label for="datepicker">Fecha de Entrada:</label>
+                                    <input id="datepicker" name="datepicker" placeholder="Seleccionar" required>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="datepicker2">Fecha de Salida:</label>
+                                    <input id="datepicker2" name="datepicker2" placeholder="Seleccionar" required>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="Adultos">Adultos:</label>
+                                    <select class="form-select wide" id="default-select" class="">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-6">
+                                    <label for="Niños">Niños:</label>
+                                    <select class="form-select wide" id="default-select" class="">
+                                        <option value="1">0</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">3</option>
+                                        <option value="5">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-12">
+                                    <label for="habitacion">Tipo de habitación:</label>
+                                    <select class="form-select wide" id="default-select" class="">
+                                        <option value="1">Habitación estándar</option>
+                                        <option value="2">Habitación superior</option>
+                                        <option value="3">Habitación superior XL</option>
+                                        <option value="4">Suite Deluxe</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-12">
+                                    <label for="oferta">Seleccionar Pack Oferta (Opcional) -> </label> <a
+                                        href="habitaciones.html"><label style="cursor:pointer">
+                                            <h5>Click aquí para más info</h5>
+                                        </label></a>
+                                    <select class="form-select wide" id="default-select" class="">
+                                        <option value="1">Ninguno</option>
+                                        <option value="2">Pack Estándar</option>
+                                        <option value="3">Pack Superior</option>
+                                        <option value="4">Pack Deluxe Premium</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-12" style="display: none;" id="emaildiv">
+                                    <label for="email">Email (se enviarán a esta dirección los datos de la reserva y el
+                                        pago)</label>
+                                    <input type="email" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="col-xl-12">
+                                    <br>
+                                    <input type="button" onclick="disponibilidad()" class="boxed-btn3"
+                                        id="btndisponible" value="Comprobar disponibilidad"
+                                        aria-roledescription="Disponibilidad">
+                                    <div id="reserva" style="display: none;"><button type="submit"
+                                            class="boxed-btn3">Reservar habitación</button></div>
+                                </div>
                             </div>
-                            <div class="col-xl-6">
-                                <label for="datepicker2">Fecha de Salida:</label>
-                                <input id="datepicker2" name="datepicker2" placeholder="Seleccionar" required>
-                            </div>
-                            <div class="col-xl-6">
-                                <label for="Adultos">Adultos:</label>
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-6">
-                                <label for="Niños">Niños:</label>
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option value="1">0</option>
-                                    <option value="2">1</option>
-                                    <option value="3">2</option>
-                                    <option value="4">3</option>
-                                    <option value="5">4</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-12">
-                                <label for="habitacion">Tipo de habitación:</label>
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option value="1">Habitación estándar</option>
-                                    <option value="2">Habitación superior</option>
-                                    <option value="3">Habitación superior XL</option>
-                                    <option value="4">Suite Deluxe</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-12">
-                                <label for="oferta">Seleccionar Pack Oferta (Opcional) -> </label> <a href="habitaciones.html"><label style="cursor:pointer"><h5>Click aquí para más info</h5></label></a>
-                                <select class="form-select wide" id="default-select" class="">
-                                    <option value="1">Ninguno</option>
-                                    <option value="2">Pack Estándar</option>
-                                    <option value="3">Pack Superior</option>
-                                    <option value="4">Pack Deluxe Premium</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-12" style="display: none;" id="emaildiv">
-                                <label for="email">Email (se enviarán a esta dirección los datos de la reserva y el pago)</label>
-                                <input type="email" id="email" placeholder="Email"required>
-                            </div>
-                            <div class="col-xl-12">
-                                <br>
-                                <input type="button" onclick="disponibilidad()" class="boxed-btn3" id="btndisponible" value="Comprobar disponibilidad" aria-roledescription="Disponibilidad">
-                                <div id="reserva" style="display: none;"><button type="submit" class="boxed-btn3">Reservar habitación</button></div>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
 
-        <br>
+            <br>
 
 
-    </div>
+        </div>
 
-    <!-- form itself end -->
+        <!-- form itself end -->
 
-</main>
+    </main>
     <!-- footer -->
     <footer class="footer">
         <div class="footer_top">
@@ -222,33 +230,25 @@
 
 
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
+    <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+    <script src="/js/jquery.counterup.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/scrollIt.js"></script>
+    <script src="/js/jquery.scrollUp.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/nice-select.min.js"></script>
+    <script src="/js/jquery.slicknav.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/gijgo.min.js"></script>
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
