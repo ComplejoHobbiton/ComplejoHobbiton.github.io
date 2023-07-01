@@ -890,19 +890,23 @@ h3 {
 }
 
 .slider_bg_1 {
-    background-image: url(../img/banner/banner.png)
+    background-image: url(../img/banner/banner.png);
+    filter: contrast(50%);
 }
 
 .slider_bg_2 {
-    background-image: url(../img/banner/banner2.png)
+    background-image: url(../img/banner/banner2.png);
+    filter: contrast(50%);
 }
 
 .slider_bg_3 {
-    background-image: url(../img/banner/banner3.png)
+    background-image: url(../img/banner/banner3.png);
+    filter: contrast(50%);
 }
 
 .slider_bg_4 {
-    background-image: url(../img/banner/banner4.png)
+    background-image: url(../img/banner/banner4.png);
+    filter: contrast(50%);
 }
 
 
@@ -4713,6 +4717,7 @@ h6 {
 
 .about_slider2_1 {
     background-image: url(../img/banner/piscinas-naturales.jpg)
+    
 }
 
 .about_slider2_2 {
@@ -4748,4 +4753,12 @@ h6 {
 
 .r4 {
     background-image: url(../img/experiencias/r4.jpg)
+}
+
+.slider {
+    filter: contrast(200%);
+}
+
+.sliderb {
+    filter: contrast(200%);
 }
