@@ -2174,8 +2174,10 @@ sup,
 sub,
 u,
 del {
-    color: #00bb48;
+    color: #008035;
     text-shadow: -2px 0 black, 0 -2px black, 2px 0 black, 0 2px black;
+    background-color: #0F0F0F;
+    border-radius: 10px;
     
 }
 
