@@ -38,7 +38,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">Inicio</a></li>
+                                        <li><a href="index.html">Inicio</a></li>
                                         <li><a href="postal.html">Experiencias<i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="actividades.html">Actividades</a></li>
@@ -46,8 +46,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="about.html">Sobre nosotros</a></li>
-                                        <li><a href="reservar.html">Reservar</a>
-                                        
+                                        <li><a class="active" href="reservar.html">Reservar</a>
+
                                     </ul>
                                 </nav>
                             </div>
@@ -71,60 +71,71 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>Hobbiton Resort</h3>
-                                <p>Relájate en mitad de la naturaleza</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>Hobbiton Resort</h3>
-                                <p>Relájate en mitad de la naturaleza</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider d-flex align-items-center justify-content-center slider_bg_3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3>Hobbiton Resort</h3>
-                                <p>Relájate en mitad de la naturaleza</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider  d-flex align-items-center justify-content-center slider_bg_4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text text-center">
-                                <h3 style="border: 3px;">Hobbiton Resort</h3>
-                                <p>Relájate en mitad de la naturaleza</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- bradcam_area_start -->
+    <div class="bradcam_area breadcam_bg">
+        <h3>Reservar alojamiento</h3>
     </div>
-    <!-- slider_area_end -->
+    <!-- bradcam_area_end -->
+
+    <!-- Formulario reservas -->
+    <div class="about_info_area">
+        <form action="" onsubmit="formulario()" id="formulario">
+            <div class="popup_box">
+                <div class="popup_inner">
+                    <h3>Comprobar disponibilidad</h3>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <label for="datepicker">Fecha de llegada:</label>
+                                <input id="datepicker" placeholder="Seleccionar">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="datepicker2">Fecha de salida:</label>
+                                <input id="datepicker2" placeholder="Seleccionar">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="Adultos">Adultos:</label>
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="Niños">Niños:</label>
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option value="1">0</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3</option>
+                                    <option value="5">4</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="habitacion">Tipo de habitación:</label>
+                                <select class="form-select wide" id="default-select" class="">
+                                    <option value="1">Laxaries Rooms</option>
+                                    <option value="2">Deluxe Room</option>
+                                    <option value="3">Signature Room</option>
+                                    <option value="4">Couple Room</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <button type="submit" class="boxed-btn3">Comprobar disponibilidad</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+
+        <br>
+
+
+    </div>
+
+    <!-- form itself end -->
 
 
     <!-- footer -->
@@ -176,8 +187,12 @@
                     <div class="col-xl-8 col-md-7 col-lg-9">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                            This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                     <div class="col-xl-4 col-md-5 col-lg-3">
                     </div>
@@ -219,14 +234,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
         });
         $('#datepicker2').datepicker({
             iconsLibrary: 'fontawesome',
             icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
+                rightIcon: '<span class="fa fa-caret-down"></span>'
+            }
 
         });
     </script>
