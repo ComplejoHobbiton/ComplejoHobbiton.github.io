@@ -349,3 +349,40 @@ mailChimp();
 function formulario(){
   alert("Tu postal se ha enviado");
 }
+
+function disponibilidad(){
+  var datepicker = document.forms["formulario"]["datepicker"].value;
+  var datepicker2 = document.forms["formulario"]["datepicker2"].value;
+
+  if(datepicker === "" || datepicker2 === ""){
+    alert("Datos erróneos. Por favor, revisa las fechas de entrada y salida");
+    return;
+
+  } else {
+
+    alert("Las habitación seleccionada está disponible");
+    
+    // Ocultar texto de disponibilidad y poner el de reserva
+
+    document.getElementById("disponh3").style.display = "none";
+    document.getElementById("reservh3").style.display = "block";
+
+    // Ocultar boton de disponibilidad y poner el de reserva
+  
+    document.getElementById("btndisponible").style.display = "none";
+    document.getElementById("reserva").style.display = "block";
+
+    // Mostrar el campo del email
+
+    document.getElementById("emaildiv").style.display = "block";
+
+
+  }
+  
+
+
+}
+
+function reserva(){
+  alert("La habitación se ha reservado correctamente. Compruebe su correo para continuar con el pago");
+}
