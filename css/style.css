@@ -1377,10 +1377,7 @@ h3 {
     height: 100%;
     content: "";
     background: #ffffff;
-    background: -moz-linear-gradient(top, #fff 0%, #000 77%);
-    background: -webkit-linear-gradient(top, #fff 0%, #000 77%);
     background: linear-gradient(to bottom, #fff 0%, #000 77%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
     z-index: 1;
     opacity: .5
 }
@@ -3289,8 +3286,6 @@ h6 {
 
 .blog_area a:hover,
 .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #009DFF 0%, #009DFF 99%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     -webkit-transition: .5s;
@@ -4548,8 +4543,6 @@ h6 {
 }
 
 .blog_part .single-home-blog .card .card-body a:hover {
-    background: -webkit-linear-gradient(131deg, #ff7e5f 0%, #feb47b 99%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
 
@@ -4643,10 +4636,7 @@ h6 {
 .blog_part .single-home-blog .card h5:hover {
     -webkit-transition: .8s;
     transition: .8s;
-    background: -webkit-linear-gradient(131deg, #feb47b 0%, #ff7e5f 99%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: 1s
 }
 
 .blog_part .single-home-blog .card ul li {
